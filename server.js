@@ -14,5 +14,9 @@ res.json({message:'Product Api is running..'});
 });
 
 //=========================start Server
-const PORT = process.env.PORT ||5000;
-app.listen();
+const PORT = process.env.PORT ||3000;
+app.listen(PORT,()=>{
+
+    console.log('server is running on https://localhost:${PORT}');
+    
+});
